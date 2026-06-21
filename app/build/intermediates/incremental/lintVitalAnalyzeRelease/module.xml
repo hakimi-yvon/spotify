@@ -1,0 +1,19 @@
+<lint-module
+    format="1"
+    dir="/home/hakimi/Documents/spotify/android/app"
+    name=":app"
+    type="APP"
+    maven="SpotifyClone:app:"
+    agpVersion="8.1.1"
+    buildFolder="build"
+    bootClassPath="/home/hakimi/Android/Sdk/platforms/android-34/android.jar:/home/hakimi/Android/Sdk/build-tools/33.0.1/core-lambda-stubs.jar"
+    javaSourceLevel="11"
+    compileTarget="android-34"
+    neverShrinking="true">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="release"/>
+</lint-module>

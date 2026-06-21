@@ -1,0 +1,83 @@
+buildscript {
+    ext {
+        buildToolsVersion = "34.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 34
+        targetSdkVersion = 34
+        ndkVersion = "23.1.7779620"
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.1.1")
+        classpath("com.facebook.react:react-native-gradle-plugin")
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+        maven { url 'https://www.jitpack.io' }
+    }
+    configurations.all {
+        resolutionStrategy.dependencySubstitution {
+            substitute(module("com.facebook.react:react-native"))
+                .using(module("com.facebook.react:react-android:0.72.6"))
+                .because("react-native was renamed to react-android in RN 0.72")
+        }
+    }
+}
+
+subprojects {
+    plugins.withId("com.android.application") {
+        android {
+            compileOptions {
+                sourceCompatibility JavaVersion.VERSION_17
+                targetCompatibility JavaVersion.VERSION_17
+            }
+        }
+    }
+    plugins.withId("com.android.library") {
+        android {
+            compileOptions {
+                sourceCompatibility JavaVersion.VERSION_17
+                targetCompatibility JavaVersion.VERSION_17
+            }
+            if (namespace == null) {
+                try {
+                    def manifestFile = project.file("${project.projectDir}/src/main/AndroidManifest.xml")
+                    if (manifestFile.exists()) {
+                        def manifestContent = manifestFile.getText("UTF-8")
+                        def matcher = manifestContent =~ /package="([^"]+)"/
+                        if (matcher.find()) {
+                            namespace = matcher.group(1)
+                        }
+                    }
+                } catch (Exception e) {
+                    // ignore
+                }
+            }
+        }
+    }
+    afterEvaluate { project ->
+        if (project.hasProperty("android")) {
+            project.android {
+                buildFeatures {
+                    buildConfig = true
+                }
+                compileOptions {
+                    sourceCompatibility JavaVersion.VERSION_17
+                    targetCompatibility JavaVersion.VERSION_17
+                }
+            }
+        }
+        tasks.matching { it.hasProperty("kotlinOptions") }.configureEach {
+            kotlinOptions {
+                jvmTarget = "17"
+            }
+        }
+    }
+}

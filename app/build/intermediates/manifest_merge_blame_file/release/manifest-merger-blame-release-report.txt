@@ -1,0 +1,150 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.spotifyclone"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:4:5-67
+11-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:4:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:5:5-79
+12-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:5:22-76
+13    <uses-permission android:name="android.permission.WAKE_LOCK" />
+13-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:6:5-68
+13-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:6:22-65
+14    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+14-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:7:5-77
+14-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:7:22-74
+15    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" />
+15-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:8:5-92
+15-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:8:22-89
+16    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+16-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:9:5-80
+16-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:9:22-77
+17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+17-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:10:5-81
+17-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:10:22-78
+18
+19    <permission
+19-->[androidx.core:core:1.9.0] /home/hakimi/.gradle/caches/transforms-3/8458bd9b49a6ff049e545f1a1071eddf/transformed/core-1.9.0/AndroidManifest.xml:22:5-24:47
+20        android:name="com.spotifyclone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+20-->[androidx.core:core:1.9.0] /home/hakimi/.gradle/caches/transforms-3/8458bd9b49a6ff049e545f1a1071eddf/transformed/core-1.9.0/AndroidManifest.xml:23:9-81
+21        android:protectionLevel="signature" />
+21-->[androidx.core:core:1.9.0] /home/hakimi/.gradle/caches/transforms-3/8458bd9b49a6ff049e545f1a1071eddf/transformed/core-1.9.0/AndroidManifest.xml:24:9-44
+22
+23    <uses-permission android:name="com.spotifyclone.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+23-->[androidx.core:core:1.9.0] /home/hakimi/.gradle/caches/transforms-3/8458bd9b49a6ff049e545f1a1071eddf/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
+23-->[androidx.core:core:1.9.0] /home/hakimi/.gradle/caches/transforms-3/8458bd9b49a6ff049e545f1a1071eddf/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
+24
+25    <queries>
+25-->[androidx.test:runner:1.4.0] /home/hakimi/.gradle/caches/transforms-3/678bb98c5cdebf2a3685909e9079bf83/transformed/runner-1.4.0/AndroidManifest.xml:24:5-28:15
+26        <package android:name="androidx.test.orchestrator" />
+26-->[androidx.test:runner:1.4.0] /home/hakimi/.gradle/caches/transforms-3/678bb98c5cdebf2a3685909e9079bf83/transformed/runner-1.4.0/AndroidManifest.xml:25:9-62
+26-->[androidx.test:runner:1.4.0] /home/hakimi/.gradle/caches/transforms-3/678bb98c5cdebf2a3685909e9079bf83/transformed/runner-1.4.0/AndroidManifest.xml:25:18-59
+27        <package android:name="androidx.test.services" />
+27-->[androidx.test:runner:1.4.0] /home/hakimi/.gradle/caches/transforms-3/678bb98c5cdebf2a3685909e9079bf83/transformed/runner-1.4.0/AndroidManifest.xml:26:9-58
+27-->[androidx.test:runner:1.4.0] /home/hakimi/.gradle/caches/transforms-3/678bb98c5cdebf2a3685909e9079bf83/transformed/runner-1.4.0/AndroidManifest.xml:26:18-55
+28        <package android:name="com.google.android.apps.common.testing.services" />
+28-->[androidx.test:runner:1.4.0] /home/hakimi/.gradle/caches/transforms-3/678bb98c5cdebf2a3685909e9079bf83/transformed/runner-1.4.0/AndroidManifest.xml:27:9-83
+28-->[androidx.test:runner:1.4.0] /home/hakimi/.gradle/caches/transforms-3/678bb98c5cdebf2a3685909e9079bf83/transformed/runner-1.4.0/AndroidManifest.xml:27:18-80
+29    </queries>
+30
+31    <application
+31-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:12:5-39:19
+32        android:name="com.spotifyclone.MainApplication"
+32-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:13:7-38
+33        android:allowBackup="false"
+33-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:17:7-34
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.9.0] /home/hakimi/.gradle/caches/transforms-3/8458bd9b49a6ff049e545f1a1071eddf/transformed/core-1.9.0/AndroidManifest.xml:28:18-86
+35        android:extractNativeLibs="false"
+36        android:icon="@mipmap/ic_launcher"
+36-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:15:7-41
+37        android:label="@string/app_name"
+37-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:14:7-39
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:16:7-52
+39        android:theme="@style/AppTheme"
+39-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:18:7-38
+40        android:usesCleartextTraffic="true" >
+40-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:19:7-42
+41        <service
+41-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:21:7-25:74
+42            android:name="com.doublesymmetry.trackplayer.service.MusicService"
+42-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:22:9-75
+43            android:enabled="true"
+43-->[:react-native-track-player] /home/hakimi/Documents/spotify/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:16:13-35
+44            android:exported="true"
+44-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:24:9-32
+45            android:foregroundServiceType="mediaPlayback" >
+45-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:23:9-54
+46            <intent-filter>
+46-->[:react-native-track-player] /home/hakimi/Documents/spotify/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:19:13-21:29
+47                <action android:name="android.intent.action.MEDIA_BUTTON" />
+47-->[:react-native-track-player] /home/hakimi/Documents/spotify/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:17-77
+47-->[:react-native-track-player] /home/hakimi/Documents/spotify/node_modules/react-native-track-player/android/build/intermediates/merged_manifest/release/AndroidManifest.xml:20:25-74
+48            </intent-filter>
+49        </service>
+50
+51        <activity
+51-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:27:7-38:18
+52            android:name="com.spotifyclone.MainActivity"
+52-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:28:9-37
+53            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+53-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:30:9-118
+54            android:exported="true"
+54-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:33:9-32
+55            android:label="@string/app_name"
+55-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:29:9-41
+56            android:launchMode="singleTask"
+56-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:31:9-40
+57            android:windowSoftInputMode="adjustResize" >
+57-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:32:9-51
+58            <intent-filter>
+58-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:34:9-37:25
+59                <action android:name="android.intent.action.MAIN" />
+59-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:35:13-65
+59-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:35:21-62
+60
+61                <category android:name="android.intent.category.LAUNCHER" />
+61-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:36:13-73
+61-->/home/hakimi/Documents/spotify/android/app/src/main/AndroidManifest.xml:36:23-70
+62            </intent-filter>
+63        </activity>
+64
+65        <provider
+65-->[androidx.emoji2:emoji2:1.2.0] /home/hakimi/.gradle/caches/transforms-3/3053e12ce2c7c1465d3f1d888d2b7d4c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+66            android:name="androidx.startup.InitializationProvider"
+66-->[androidx.emoji2:emoji2:1.2.0] /home/hakimi/.gradle/caches/transforms-3/3053e12ce2c7c1465d3f1d888d2b7d4c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+67            android:authorities="com.spotifyclone.androidx-startup"
+67-->[androidx.emoji2:emoji2:1.2.0] /home/hakimi/.gradle/caches/transforms-3/3053e12ce2c7c1465d3f1d888d2b7d4c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+68            android:exported="false" >
+68-->[androidx.emoji2:emoji2:1.2.0] /home/hakimi/.gradle/caches/transforms-3/3053e12ce2c7c1465d3f1d888d2b7d4c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+69            <meta-data
+69-->[androidx.emoji2:emoji2:1.2.0] /home/hakimi/.gradle/caches/transforms-3/3053e12ce2c7c1465d3f1d888d2b7d4c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+70                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+70-->[androidx.emoji2:emoji2:1.2.0] /home/hakimi/.gradle/caches/transforms-3/3053e12ce2c7c1465d3f1d888d2b7d4c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+71                android:value="androidx.startup" />
+71-->[androidx.emoji2:emoji2:1.2.0] /home/hakimi/.gradle/caches/transforms-3/3053e12ce2c7c1465d3f1d888d2b7d4c/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+72            <meta-data
+72-->[androidx.lifecycle:lifecycle-process:2.5.1] /home/hakimi/.gradle/caches/transforms-3/d99281a3f690d6d536903cf7949babb5/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:31:13-33:52
+73                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+73-->[androidx.lifecycle:lifecycle-process:2.5.1] /home/hakimi/.gradle/caches/transforms-3/d99281a3f690d6d536903cf7949babb5/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:32:17-78
+74                android:value="androidx.startup" />
+74-->[androidx.lifecycle:lifecycle-process:2.5.1] /home/hakimi/.gradle/caches/transforms-3/d99281a3f690d6d536903cf7949babb5/transformed/jetified-lifecycle-process-2.5.1/AndroidManifest.xml:33:17-49
+75        </provider>
+76
+77        <meta-data
+77-->[com.facebook.soloader:soloader:0.10.5] /home/hakimi/.gradle/caches/transforms-3/72c3e11a0937e5d0a95c7ce8d9e2a3e6/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+78            android:name="com.facebook.soloader.enabled"
+78-->[com.facebook.soloader:soloader:0.10.5] /home/hakimi/.gradle/caches/transforms-3/72c3e11a0937e5d0a95c7ce8d9e2a3e6/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
+79            android:value="false" />
+79-->[com.facebook.soloader:soloader:0.10.5] /home/hakimi/.gradle/caches/transforms-3/72c3e11a0937e5d0a95c7ce8d9e2a3e6/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
+80    </application>
+81
+82</manifest>

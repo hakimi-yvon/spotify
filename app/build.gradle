@@ -1,0 +1,58 @@
+apply plugin: "com.android.application"
+apply plugin: "com.facebook.react"
+
+react {
+    hermesEnabled = (findProperty('hermesEnabled') ?: "true").toBoolean()
+}
+
+android {
+    ndkVersion rootProject.ext.ndkVersion
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    namespace "com.spotifyclone"
+    buildFeatures {
+        buildConfig true
+    }
+    defaultConfig {
+        applicationId "com.spotifyclone"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        buildConfigField "boolean", "IS_NEW_ARCHITECTURE_ENABLED", (findProperty('newArchEnabled') ?: "false").toString()
+        buildConfigField "boolean", "IS_HERMES_ENABLED", (findProperty('hermesEnabled') ?: "true").toString()
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
+        release {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.9.0'
+    implementation 'com.facebook.react:react-android:0.72.6'
+    implementation 'com.facebook.react:hermes-android:0.72.6'
+}
+
+apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
+
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
+
